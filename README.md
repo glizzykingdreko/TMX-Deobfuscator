@@ -19,7 +19,23 @@ You can use `tmx-deobfuscator` both programmatically in code or via CLI.
 ```javascript
 const tmx_deobfuscator = require("tmx-deobfuscator");
 
-tmx_deobfuscator.decode("example.js");
+const deobfuscated_code = tmx_deobfuscator.deobfuscate("example.js");
+
+console.log(deobfuscated_code);
+```
+You can also specify an output file:
+```javascript
+const tmx_deobfuscator = require("tmx-deobfuscator");
+
+tmx_deobfuscator.deobfuscate("example.js", "example_deobfuscated.js");
+```
+Or directly pass the code as a string:
+```javascript
+const tmx_deobfuscator = require("tmx-deobfuscator");
+
+let code = require("fs").readFileSync("example.js", "utf8");
+
+const deobfuscated_code = tmx_deobfuscator.deobfuscate(code);
 ```
 
 ### CLI
