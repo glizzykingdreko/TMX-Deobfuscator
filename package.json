@@ -1,6 +1,6 @@
 {
   "name": "tmx-deobfuscator",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Quick and easy deobfuscation of ThreatMetrix dynamic files with no worries",
   "main": "src/index.js",
   "bin": {
