@@ -1,0 +1,24 @@
+{
+  "name": "tmx-deobfuscator",
+  "version": "1.0.0",
+  "description": "Quick and easy deobfuscation of ThreatMetrix dynamic files with no worries",
+  "main": "src/index.js",
+  "bin": {
+    "tmx_deob": "./src/cli.js"
+  },
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/glizzykingdreko/tmx-deobfuscator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/generator": "^7.22.5",
+    "@babel/parser": "^7.22.5",
+    "@babel/traverse": "^7.22.5",
+    "@babel/types": "^7.22.5"
+  }
+}
